@@ -1,0 +1,22 @@
+t=int(input())
+while(t>0):
+    n=int(input())
+    n=bin(n)
+    n=list(n)
+    l=len(n)
+    i=0
+    s=0
+    print(n)
+    Li=[]
+    while(l>2):
+        f=n[l-1]
+        x=pow(3,i)*int(f)
+        if(x!=0):
+            Li.append(x)
+            print(*Li)
+            s+=1
+        l-=1
+        i+=1
+    print(s)
+    print(*Li)
+    t-=1
